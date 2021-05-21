@@ -30,5 +30,10 @@ namespace WebApplication1.Views
         {
             Response.Redirect("editar_contato.aspx");
         }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

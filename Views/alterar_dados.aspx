@@ -35,7 +35,7 @@
         </div>
 
         <div class="btn-control">
-            <asp:Button ID="dadosSalvar" runat="server" Text="Salvar" />
+            <asp:Button ID="dadosSalvar" runat="server" Text="Salvar" OnClick="dadosSalvar_Click" />
             <asp:Button ID="dadosCancelar" runat="server" Text="Cancelar" OnClick="dadosCancelar_Click"/>
         </div>
     </div>

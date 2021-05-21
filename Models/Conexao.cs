@@ -11,9 +11,9 @@ namespace WebApplication1.Models
     {
         public MySqlConnection conectar()
         {
-            string server = "localhost";
+            string server = "127.0.0.1";
             int port = 8000;
-            string database = "fatec_app";
+            string database = "fatec_aap";
             string user = "root";
             string password = "";
             string stringDeConexao = $"Server={server};Port={port};Database={database};Uid={user};Pwd={password}";

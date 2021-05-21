@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
 {
     public class ContatoController
     {
-        public bool inserir(ContatoModel contato)
+        public bool Inserir(ContatoModel contato)
         {
             MySqlConnection conn = new Conexao().conectar();
             MySqlCommand cmd = new MySqlCommand();
@@ -38,7 +38,7 @@ namespace WebApplication1.Controllers
                 throw erro;
             }
         }
-        public List<string> pesquisar(string contato)
+        public List<string> Pesquisar(string contato)
         {
             List<string> resposta = new List<string>();
             MySqlConnection conn = new Conexao().conectar();
@@ -52,10 +52,12 @@ namespace WebApplication1.Controllers
             MySqlDataReader data = cmd.ExecuteReader();
             if (data.Read())
             {
-                foreach (var item in data)
-                {
-                    resposta.Add(item.ToString());
-                }
+                resposta.Add(data[0].ToString());
+                resposta.Add(data[1].ToString());
+                resposta.Add(data[2].ToString());
+                resposta.Add(data[3].ToString());
+                resposta.Add(data[4].ToString());
+                resposta.Add(data[5].ToString());
                 conn.Close();
                 conn.Dispose();
                 return resposta;
@@ -63,7 +65,7 @@ namespace WebApplication1.Controllers
             resposta.Add("Contato não encontrado");
             return resposta;
         }
-        public bool atualizar(ContatoModel contato)
+        public bool Atualizar(ContatoModel contato)
         {
             MySqlConnection conn = new Conexao().conectar();
             MySqlCommand cmd = new MySqlCommand();
@@ -91,7 +93,7 @@ namespace WebApplication1.Controllers
                 throw erro;
             }
         }
-        public bool excluir(int contato)
+        public bool Excluir(int contato)
         {
             MySqlConnection conn = new Conexao().conectar();
             MySqlCommand cmd = new MySqlCommand();

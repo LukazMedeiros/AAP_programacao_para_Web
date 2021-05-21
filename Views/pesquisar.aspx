@@ -47,6 +47,7 @@
 
         <div class="btn-control form-control">
             <asp:Button ID="btnEdit" runat="server" Text="Editar" OnClick="btnEdit_Click" />
+            <asp:Button ID="btnDelete" runat="server" Text="Excluir" OnClick="btnDelete_Click" />
             <asp:Button ID="btnBack" runat="server" Text="Voltar" OnClick="btnBack_Click" />
         </div>
 

@@ -135,6 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContatoController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Models\Conexao.cs" />
     <Compile Include="Models\ContatoModel.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
