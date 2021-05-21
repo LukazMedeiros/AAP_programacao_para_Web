@@ -15,7 +15,7 @@
 
         <section class="card" data-tilt>
         <h2>Editar</h2>
-        <p>pesquise por um contato e edite seus dados.</p>
+        <p>pesquise por um contato e edite suas informações.</p>
         <a href="editar_contato.aspx" class="button">ir <img src="../Assets/arrow-right.svg" alt="ir" /></a>
     </section>
 

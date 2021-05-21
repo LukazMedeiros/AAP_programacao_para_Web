@@ -66,7 +66,7 @@ namespace WebApplication1.Views
                 catch (Exception erro)
                 {
                     Response.Write("<script>alert('Erro ao cadastrar usuário!')</script>");
-                    //throw erro;
+                    Console.WriteLine(erro);
                 }
             }
         }

@@ -16,12 +16,13 @@
     
         <div class="form-control btn-control">
             <asp:TextBox ID="txbSearch" runat="server"></asp:TextBox>
-            <asp:Button ID="btnSearch" runat="server" Text="Pesquisar" />
+            <asp:Button ID="btnSearch" runat="server" Text="Pesquisar" OnClick="btnSearch_Click" />
         </div>
 
         <div class="table-card">
             <table>
                 <caption>Contato</caption>
+                <asp:Label ID="contatoID" runat="server" Text="" Visible="False"></asp:Label>
                 <thead>
                 </thead>
                 <tbody>

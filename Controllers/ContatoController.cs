@@ -38,14 +38,15 @@ namespace WebApplication1.Controllers
                 throw erro;
             }
         }
-        public List<string> Pesquisar(string contato)
+        public List<string> Pesquisar(string contato, string dono)
         {
             List<string> resposta = new List<string>();
             MySqlConnection conn = new Conexao().conectar();
             MySqlCommand cmd = new MySqlCommand();
 
-            cmd.CommandText = $"SELECT * FROM Contacts WHERE contact_name = @nome";
+            cmd.CommandText = $"SELECT * FROM Contacts WHERE contact_name = @nome AND owner_id = @dono;";
             cmd.Parameters.AddWithValue("@nome", contato);
+            cmd.Parameters.AddWithValue("@dono", dono);
 
             cmd.Connection = conn;
 
@@ -100,7 +101,7 @@ namespace WebApplication1.Controllers
 
             cmd.CommandText = $"DELETE FROM Contacts WHERE contact_id = @contato;";
 
-            cmd.Parameters.AddWithValue("@nome", contato);
+            cmd.Parameters.AddWithValue("@contato", contato);
 
             cmd.Connection = conn;
 

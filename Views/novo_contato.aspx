@@ -35,7 +35,7 @@
         </div>
 
         <div class="btn-control form-control">
-            <asp:Button ID="btnSalvar" runat="server" Text="Salvar" />
+            <asp:Button ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
             <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" />
         </div>
 
