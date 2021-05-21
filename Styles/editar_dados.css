@@ -1,0 +1,72 @@
+﻿.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(2, 0, 36);
+    background: linear-gradient( 320deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 26%, rgba(0, 212, 255, 1) 100% );
+}
+
+    .container:after {
+        content: attr(data-page);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.3);
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-25%);
+        font-size: 5rem;
+    }
+
+    .container .form {
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+    }
+
+        .container .form label {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .container .form input {
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(20px);
+        }
+
+            .container .form input:focus {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+        .container .form button {
+            background: transparent;
+            border-radius: 5px;
+            color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+            .container .form button:hover {
+                background: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .container .form button:active {
+                animation: fade 0.1s;
+            }
+
+@keyframes fade {
+    0% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}

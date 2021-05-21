@@ -1,0 +1,73 @@
+﻿.container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient( 320deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 26%, rgba(0, 212, 255, 1) 100% );
+}
+
+    .container,
+    .container .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+.form {
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+        }
+
+.form input {
+                border-radius: 5px;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+                background: rgba(255, 255, 255, 0);
+                backdrop-filter: blur(20px);
+            }
+
+.form input:focus {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+
+p {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+p span a:hover {
+    font-size: 1.1rem;
+}
+
+button {
+    background: transparent;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+button:active {
+        animation: fade 0.1s;
+    }
+
+@keyframes fade {
+    0% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
