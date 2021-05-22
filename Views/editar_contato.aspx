@@ -16,10 +16,11 @@
 
         <div class="form-control btn-control">
             <asp:TextBox ID="editarBuscar" runat="server"></asp:TextBox>
-            <asp:Button ID="editarBtnBuscar" runat="server" Text="Pesquisar" />
+            <asp:Button ID="editarBtnBuscar" runat="server" Text="Pesquisar" OnClick="editarBtnBuscar_Click" />
         </div>
 
         <div class="form-control">
+            <asp:Label ID="contatoID" runat="server" Text="" Visible="False"></asp:Label>
             <label for="editarNome">Nome:</label>
             <asp:TextBox ID="editarNome" runat="server"></asp:TextBox>
         </div>
@@ -40,7 +41,7 @@
         </div>
 
         <div class="form-control btn-control">
-            <asp:Button ID="btnSalvar" runat="server" Text="Salvar" />
+            <asp:Button ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
             <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" />
         </div>
 

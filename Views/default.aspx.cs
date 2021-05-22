@@ -43,7 +43,8 @@ namespace WebApplication1.Views
             }
             catch (Exception erro)
             {
-                throw erro;
+                Console.WriteLine(erro);
+                //throw erro;
             }
         }
     }

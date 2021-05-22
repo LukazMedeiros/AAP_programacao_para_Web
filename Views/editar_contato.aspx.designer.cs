@@ -51,6 +51,15 @@ namespace WebApplication1.Views
         protected global::System.Web.UI.WebControls.Button editarBtnBuscar;
 
         /// <summary>
+        /// Controle contatoID.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label contatoID;
+
+        /// <summary>
         /// Controle editarNome.
         /// </summary>
         /// <remarks>

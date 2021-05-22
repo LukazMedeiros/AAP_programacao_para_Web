@@ -35,6 +35,7 @@ namespace WebApplication1.Controllers
             }
             catch (Exception erro)
             {
+                Console.WriteLine(erro);
                 throw erro;
             }
         }
@@ -91,6 +92,7 @@ namespace WebApplication1.Controllers
             }
             catch (Exception erro)
             {
+                Console.WriteLine(erro);
                 throw erro;
             }
         }
@@ -114,6 +116,7 @@ namespace WebApplication1.Controllers
             }
             catch (Exception erro)
             {
+                Console.WriteLine(erro);
                 throw erro;
             }
         }

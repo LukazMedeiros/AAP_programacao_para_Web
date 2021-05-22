@@ -19,7 +19,11 @@ namespace WebApplication1.Views
             }
             else
             {
-
+                List<string> resposta = new List<string>();
+                UsuarioController controller = new UsuarioController();
+                resposta = controller.Pesquisar(Session["email"].ToString());
+                dadosNome.Text = resposta[1].ToString();
+                dadosEmail.Text = resposta[2].ToString();
             }
         }
 
@@ -79,8 +83,8 @@ namespace WebApplication1.Views
                 }
                 catch (Exception erro)
                 {
-
-                    throw erro;
+                    Console.WriteLine(erro);
+                    //throw erro;
                 }
             }
         }

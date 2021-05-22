@@ -39,7 +39,7 @@ namespace WebApplication1.Views
                 ContatoModel contato = new ContatoModel(novoNome.Text, novoTelefone.Text, novoEmail.Text, novoGrupo.Text, Session["login"].ToString());
                 ContatoController controller = new ContatoController();
                 bool resposta = controller.Inserir(contato);
-                if (true)
+                if (resposta)
                 {
                     Response.Write("<script>alert('Novo contato inseridos!')</script>");
                     novoNome.Text = "";
@@ -54,8 +54,8 @@ namespace WebApplication1.Views
             }
             catch (Exception erro)
             {
-
-                throw erro;
+                Console.WriteLine(erro);
+                //throw erro;
             }
         }
     }
