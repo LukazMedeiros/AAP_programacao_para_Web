@@ -1,0 +1,5 @@
+﻿Nome do caso de uso,Alterar contato
+Ator,usuário
+Pré-condições,O usuário deve estar autenticado em sistema
+Cenário principal,O usuário pesquisa o contato que deseja editar;O formulário de edição carrega com os dados do usuário selecionado;O usuário edita os campos desejados;O usuário clica em salvar
+Cenário alternativo,O usuário clica no botão “cancelar” antes de concluir a operação de alteração
