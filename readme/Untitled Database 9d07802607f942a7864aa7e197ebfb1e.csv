@@ -1,5 +1,0 @@
-﻿Nome do caso de uso,Excluir contato
-Ator,usuário
-Pré-condições,O usuário deve estar autenticado em sistema
-Cenário principal,O usuário pesquisa o contato cadastrados;O usuário clica em “excluir”;O sistema emite uma mensagem de sucesso
-Cenário alternativo,O usuário não clica em excluir

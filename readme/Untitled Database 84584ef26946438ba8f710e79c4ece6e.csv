@@ -1,5 +1,0 @@
-﻿Nome do caso de uso,Autenticar
-Ator,usuário
-Pré-condições,O usuário deve possuir cadastro ativo
-Cenário principal,O sistema carrega em ela inicial;O usuário preenche o formulário de login com seus dados;O usuário clica em login;O sistema carrega em menu principal
-Cenário alternativo,O usuário não efetua o login

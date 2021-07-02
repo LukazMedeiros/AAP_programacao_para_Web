@@ -1,3 +1,0 @@
-# Entrega do anteprojeto
-
-: x

@@ -1,5 +1,0 @@
-﻿Nome do caso de uso,Pesquisar contato
-Ator,usuário
-Pré-condições,O usuário deve estar autenticado em sistema
-Cenário principal,O sistema carrega em menu principal;O usuário clica em “novo contato”;O sistema carrega o formulário de novos contatos;O usuário preenche o formulário;O usuário clica em “salvar”;
-Cenário alternativo,O usuário clica no botão “cancelar” antes de concluir a operação de cadastro

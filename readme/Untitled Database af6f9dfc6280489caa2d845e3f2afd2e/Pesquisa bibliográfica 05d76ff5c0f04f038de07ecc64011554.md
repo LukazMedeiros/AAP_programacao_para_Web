@@ -1,3 +1,0 @@
-# Pesquisa bibliográfica
-
-: x
